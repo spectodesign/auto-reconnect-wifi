@@ -6,7 +6,7 @@ log "starting " & (date string of (current date)) & " " & (time string of (curre
 set wifiNetwork to "your own network name"
 set networkInterface to "your own wifi network interface" -- e.g. en1
 set wifiPassword to "your own password"
-set sleepTimeInMinutes to 30 * 60 -- =30 mins
+set sleepTimeInSeconds to 30 * 60 -- =30 mins
 
 
 repeat
@@ -17,5 +17,5 @@ repeat
 		log "attempting to select wifi network " & (date string of (current date)) & " " & (time string of (current date))
 		do shell script "networksetup -setairportnetwork " & "'" & networkInterface & "'" & " " & "'" & wifiNetwork & "'" & " " & "'" & wifiPassword & "'"
 	end if
-	delay sleepTimeInMinutes
+	delay sleepTimeInSeconds
 end repeat
