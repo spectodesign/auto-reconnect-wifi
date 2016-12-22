@@ -1,5 +1,5 @@
 # auto-reconnect-wifi
-Automatically reconnect a Mac OS X server to Wifi
+Automatically reconnect Mac OS X server to Wifi
 
 -- AppleScript will re-connect an OSX server back to the specified WiFi network after a router reboot
 -- tested on OSX 10.11
